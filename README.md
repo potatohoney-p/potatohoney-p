@@ -20,35 +20,29 @@ Three parts of the same question: **how do we make agent work easier to inspect?
 <a href="https://github.com/potatohoney-p/weasley-subagents">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/project-subagents-dark.svg" />
-    <img src="./assets/project-subagents.svg" width="100%" alt="Weasley Subagents" />
+    <img src="./assets/project-subagents.svg" width="420" alt="Weasley Subagents" />
   </picture>
 </a>
 
-**[Weasley Subagents ↗](https://github.com/potatohoney-p/weasley-subagents)** — Coordinate focused agents without losing the parent session. A Pi extension with parallel reviews, explicit handoffs, background runs, and bounded execution.
-
-<sub>TypeScript · Pi · Worktree isolation</sub>
+**[Weasley Subagents ↗](https://github.com/potatohoney-p/weasley-subagents)** — Coordinate focused agents without losing the parent session. A Pi extension with parallel reviews, explicit handoffs, background runs, and bounded execution.<br /><sub>TypeScript · Pi · Worktree isolation</sub>
 
 <a href="https://github.com/potatohoney-p/weasley-deepmind">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/project-deepmind-dark.svg" />
-    <img src="./assets/project-deepmind.svg" width="100%" alt="Weasley DeepMind" />
+    <img src="./assets/project-deepmind.svg" width="420" alt="Weasley DeepMind" />
   </picture>
 </a>
 
-**[Weasley DeepMind ↗](https://github.com/potatohoney-p/weasley-deepmind)** — Give agents memory with structure. A self-hosted MCP server for typed fragments, linked evidence, and retrieval within a token budget.
-
-<sub>JavaScript · PostgreSQL / pgvector · MCP</sub>
+**[Weasley DeepMind ↗](https://github.com/potatohoney-p/weasley-deepmind)** — Give agents memory with structure. A self-hosted MCP server for typed fragments, linked evidence, and retrieval within a token budget.<br /><sub>JavaScript · PostgreSQL / pgvector · MCP</sub>
 
 <a href="https://github.com/potatohoney-p/weasley-autoresearch">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/project-autoresearch-dark.svg" />
-    <img src="./assets/project-autoresearch.svg" width="100%" alt="Weasley AutoResearch" />
+    <img src="./assets/project-autoresearch.svg" width="420" alt="Weasley AutoResearch" />
   </picture>
 </a>
 
-**[Weasley AutoResearch ↗](https://github.com/potatohoney-p/weasley-autoresearch)** — Make experimentation leave evidence. A guarded Pi loop that runs benchmarks, records results, keeps improvements, and reverts regressions.
-
-<sub>TypeScript · Pi · Benchmark harnesses</sub>
+**[Weasley AutoResearch ↗](https://github.com/potatohoney-p/weasley-autoresearch)** — Make experimentation leave evidence. A guarded Pi loop that runs benchmarks, records results, keeps improvements, and reverts regressions.<br /><sub>TypeScript · Pi · Benchmark harnesses</sub>
 
 ## Beyond the agent loop
 
