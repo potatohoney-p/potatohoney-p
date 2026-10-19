@@ -1,0 +1,71 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "23 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/snake.yml
+      - .github/scripts/style_snake.py
+      - .github/scripts/test_style_snake.py
+
+permissions:
+  contents: read
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Test head styling contract
+        run: python3 -m unittest discover -s .github/scripts -p 'test_*.py' -v
+
+      - name: Generate from GitHub contribution levels
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3 / 3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ github.token }}
+          outputs: |
+            dist/github-snake.svg?palette=github-light&color_snake=#E06666&color_dots=#EBEEF5,#C6D2FF,#9AB0FF,#6C8DFF,#4565D6
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#E06666&color_dots=#1B2233,#354779,#5068BC,#6C8DFF,#A5B9FF
+
+      - name: Color and validate the true leading segment
+        run: python3 .github/scripts/style_snake.py dist
+
+      - name: Publish SVGs without rewriting output history
+        shell: bash
+        run: |
+          set -euo pipefail
+          output_dir="$RUNNER_TEMP/snake-output"
+          if git ls-remote --exit-code --heads origin output > /dev/null; then
+            git fetch origin output
+            git worktree add --detach "$output_dir" FETCH_HEAD
+          else
+            status=$?
+            # ls-remote returns 2 for a missing ref; other failures must stop.
+            if [ "$status" -ne 2 ]; then exit "$status"; fi
+            git worktree add --detach "$output_dir" HEAD
+            git -C "$output_dir" switch --orphan snake-output
+          fi
+          cp dist/github-snake.svg dist/github-snake-dark.svg "$output_dir/"
+          cd "$output_dir"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- github-snake.svg github-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo 'Contribution snake is already up to date.'
+            exit 0
+          fi
+          git commit -m 'Update contribution snake'
+          git push origin HEAD:refs/heads/output

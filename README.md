@@ -62,6 +62,14 @@ I work on AI tools where the important parts stay visible: sources, state, memor
 ## GitHub at a glance
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/potatohoney-p/potatohoney-p/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/potatohoney-p/potatohoney-p/output/github-snake.svg" />
+    <img width="100%" src="https://raw.githubusercontent.com/potatohoney-p/potatohoney-p/output/github-snake.svg" alt="Animated GitHub contributions in shades of blue, with a crimson snake head and rose body" />
+  </picture>
+</p>
+
+<p align="center">
   <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=potatohoney-p&theme=transparent" alt="potatohoney-p contribution summary" />
 </p>
 
