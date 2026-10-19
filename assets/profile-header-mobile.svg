@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320" role="img" aria-labelledby="title"><title id="title">potatohoney-p — Agents, with a paper trail. Harness / Memory / Evaluation.</title><g font-family="Segoe UI, Helvetica, Arial, sans-serif"><rect x="1" y="1" width="598" height="318" rx="18" fill="#F4F7FF" stroke="#D7E0F4"/><path d="M32 30h32" stroke="#6C8DFF" stroke-width="4"/><text x="78" y="37" font-size="18" letter-spacing="2" fill="#485977">OPEN-SOURCE FIELD NOTES</text><text x="30" y="115" font-size="58" font-weight="700" letter-spacing="-2" fill="#17243D">potatohoney-p</text><text x="32" y="165" font-size="29" fill="#485977">Agents, with a paper trail.</text><g transform="translate(357 170) scale(0.6)" fill="none" stroke="#6C8DFF" stroke-width="2">
+    <circle cx="112" cy="108" r="89" opacity=".22"/><circle cx="112" cy="108" r="63" opacity=".15"/>
+    <path d="M34 56H176V160H34Z" stroke-dasharray="4 7" opacity=".6"/>
+    <path d="M34 56H112V108H176V160H112V108H34Z" stroke-width="3"/>
+    <g fill="#6C8DFF"><rect x="22" y="44" width="24" height="24" rx="5"/><rect x="164" y="96" width="24" height="24" rx="5"/><rect x="100" y="148" width="24" height="24" rx="5"/></g>
+    <circle cx="112" cy="108" r="17" fill="#101827"/><circle cx="112" cy="108" r="5" fill="#A5B9FF" stroke="none"/>
+    <path d="m77 51 5 5-5 5m94 69 5 5-5 5m-41 20-5 5 5 5" stroke-width="3"/>
+    <g fill="#6C8DFF" stroke="none" opacity=".5"><circle cx="34" cy="160" r="4"/><circle cx="176" cy="56" r="4"/></g></g><text x="32" y="233" font-size="23" fill="#17243D">Harness. Memory.</text><text x="32" y="267" font-size="23" fill="#17243D">Evaluation.</text></g></svg>
