@@ -11,7 +11,21 @@
   <a href="https://github.com/potatohoney-p?tab=repositories">All repositories</a>
 </p>
 
-I build the machinery around AI agents: **orchestration, persistent memory, and evaluation**. My public projects explore how to make the path from a prompt to a result visible, inspectable, and easier to build on.
+## Gwanyu Park
+
+**Machine Learning · Language Models · Agent Systems**
+
+*Research-minded. Systems-driven.*
+
+I work at the intersection of machine learning research, language-model engineering, and entrepreneurship, with experience across professional services, legal technology, and biotechnology.
+
+My foundation is an Advanced Computing (Honours) degree in Computer Science from the University of Sydney. My experience includes ML research at Ernst & Young in Sydney, language-model development at ChangLaw Group in the United States, and applied ML work at a biotechnology research center.
+
+Beyond these roles, I built and ran my own business focused on machine learning and big data. That work led to a granted Korean patent in big-data search technology: KR102195556B1 (2020).
+
+My technical interests span machine learning, deep learning, reinforcement learning, and language-model quantization. I also build agent harnesses as personal projects, exploring the systems around language models: orchestration, memory, tool use, and evaluation.
+
+I’m drawn to the work between an interesting idea and a system you can actually inspect, test, and improve.
 
 ## Selected work
 
