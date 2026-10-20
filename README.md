@@ -2,7 +2,7 @@
   <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/profile-header-mobile-dark.svg" />
   <source media="(max-width: 600px)" srcset="./assets/profile-header-mobile.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg" />
-  <img src="./assets/profile-header.svg" width="100%" alt="potatohoney-p — Agents, with a paper trail. Harness / Memory / Evaluation." />
+  <img src="./assets/profile-header.svg" width="60%" alt="potatohoney-p — Agents, with a paper trail. Harness / Memory / Evaluation." />
 </picture>
 
 <p align="center">
